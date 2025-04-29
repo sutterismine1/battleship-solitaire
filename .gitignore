@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+<<<<<<< HEAD
+=======
+
+# Assignment Submission
+Algorithms_for_Solving_Battleship_Solitaire_Puzzles__Report_.pdf
+results/
+times/
+genetic_algorithm.py.pdf
+main.py.pdf
+project.zip
+readme.txt
+>>>>>>> 7dd5263 (project completed)
