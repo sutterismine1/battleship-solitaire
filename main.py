@@ -1121,7 +1121,7 @@ while running:
                     result = constraint_propagation(board, screen, row_numbers, col_numbers)
                     time_taken = time.time() - start
                     print("Time taken: " + str(time_taken) + " seconds")
-                    file_name = "/".join(level.split("/")[:8] + ["times"] + level.split("/")[8:]) + "-results.txt"
+                    file_name = "results/" + level.split("/")[-1] + "-results.txt"
                     with open(file_name, "a") as f:
                         f.write("Algorithm: Constraint Propagation\n")
                         f.write("Time taken: " + str(time_taken) + " seconds\n\n")
@@ -1138,7 +1138,7 @@ while running:
                     result = naive_backtracking(board, screen, row_numbers, col_numbers)
                     time_taken = time.time() - start
                     print("Time taken: " + str(time_taken) + " seconds")
-                    file_name = "/".join(level.split("/")[:8] + ["times"] + level.split("/")[8:]) + "-results.txt"
+                    file_name = "results/" + level.split("/")[-1] + "-results.txt"
                     with open(file_name, "a") as f:
                         f.write("Algorithm: Backtracking\n")
                         f.write("Time taken: " + str(time_taken) + " seconds\n\n")
@@ -1165,7 +1165,7 @@ while running:
                             break
                     time_taken = time.time() - start
                     print("Time taken: " + str(time_taken) + " seconds")
-                    file_name = "/".join(level.split("/")[:8] + ["times"] + level.split("/")[8:]) + "-results.txt"
+                    file_name = "results/" + level.split("/")[-1] + "-results.txt"
                     with open(file_name, "a") as f:
                         f.write("Algorithm: GA\n")
                         f.write("Time taken: " + str(time_taken) + " seconds\n")
